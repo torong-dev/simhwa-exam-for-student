@@ -6,6 +6,7 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { waitTwoSeconds } from "../../utils";
 import nextId from "react-id-generator";
 
+// __addToDo 답안
 export const __addToDo = createAsyncThunk(
   "__addToDo",
   async (payload, thunkAPI) => {
@@ -23,6 +24,7 @@ export const __addToDo = createAsyncThunk(
   }
 );
 
+// __deleteToDo 답안
 export const __deleteTodo = createAsyncThunk(
   "__deleteToDo",
   async (id, thunkAPI) => {
